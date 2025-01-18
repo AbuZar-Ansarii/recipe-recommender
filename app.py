@@ -52,7 +52,7 @@ image_url = img_url(recipe_name)
 # action after button clicked
 
 if st.button('click'):
-    st.image(image_url,use_container_width=True)
+    st.image(image_url,use_column_width=True)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header(f"CUISINE \n{cus_type(recipe_name)}")
